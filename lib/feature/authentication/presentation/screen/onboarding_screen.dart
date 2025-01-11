@@ -73,9 +73,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
               Align(alignment: Alignment.bottomCenter,
                 child: Container(height: Get.height * .55, width: Get.width,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(40),
-                    gradient: const LinearGradient(
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.vertical(top: Radius.circular(40)),
+                    gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
