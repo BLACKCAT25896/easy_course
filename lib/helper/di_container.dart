@@ -2,19 +2,19 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
-import 'package:test_project/api_handle/api_client.dart';
-import 'package:test_project/common/controller/date_picker_controller.dart';
-import 'package:test_project/common/controller/splash_controller.dart';
-import 'package:test_project/common/controller/theme_controller.dart';
-import 'package:test_project/common/repository/splash_repository.dart';
-import 'package:test_project/feature/authentication/domain/repository/authentication_repository.dart';
-import 'package:test_project/feature/authentication/logic/authentication_controller.dart';
-import 'package:test_project/feature/dashboard/controller/dashboard_controller.dart';
-import 'package:test_project/feature/feed/controller/feed_controller.dart';
-import 'package:test_project/feature/feed/domain/repository/feed_repository.dart';
-import 'package:test_project/localization/language_model.dart';
-import 'package:test_project/localization/localization_controller.dart';
-import 'package:test_project/util/app_constants.dart';
+import 'package:easy_course/api_handle/api_client.dart';
+import 'package:easy_course/common/controller/date_picker_controller.dart';
+import 'package:easy_course/common/controller/splash_controller.dart';
+import 'package:easy_course/common/controller/theme_controller.dart';
+import 'package:easy_course/common/repository/splash_repository.dart';
+import 'package:easy_course/feature/authentication/domain/repository/authentication_repository.dart';
+import 'package:easy_course/feature/authentication/logic/authentication_controller.dart';
+import 'package:easy_course/feature/dashboard/controller/dashboard_controller.dart';
+import 'package:easy_course/feature/feed/controller/feed_controller.dart';
+import 'package:easy_course/feature/feed/domain/repository/feed_repository.dart';
+import 'package:easy_course/localization/language_model.dart';
+import 'package:easy_course/localization/localization_controller.dart';
+import 'package:easy_course/util/app_constants.dart';
 
 Future<Map<String, Map<String, String>>> init() async {
   // Core

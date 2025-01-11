@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:test_project/util/dimensions.dart';
+import 'package:easy_course/util/dimensions.dart';
 
 
 

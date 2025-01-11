@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/util/dimensions.dart';
+import 'package:easy_course/util/dimensions.dart';
 
 class CustomCircularIconButton extends StatelessWidget {
   final IconData iconData;

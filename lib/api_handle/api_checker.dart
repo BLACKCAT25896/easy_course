@@ -1,7 +1,7 @@
 
 import 'package:get/get.dart';
-import 'package:test_project/common/widget/custom_snackbar.dart';
-import 'package:test_project/feature/authentication/logic/authentication_controller.dart';
+import 'package:easy_course/common/widget/custom_snackbar.dart';
+import 'package:easy_course/feature/authentication/logic/authentication_controller.dart';
 
 
 class ApiChecker {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/widget/custom_contaner.dart';
-import 'package:test_project/common/widget/custom_image.dart';
-import 'package:test_project/common/widget/custom_search.dart';
-import 'package:test_project/common/widget/write_comment_widget.dart';
-import 'package:test_project/util/dimensions.dart';
-import 'package:test_project/util/images.dart';
+import 'package:easy_course/common/widget/custom_contaner.dart';
+import 'package:easy_course/common/widget/custom_image.dart';
+import 'package:easy_course/common/widget/custom_search.dart';
+import 'package:easy_course/common/widget/write_comment_widget.dart';
+import 'package:easy_course/util/dimensions.dart';
+import 'package:easy_course/util/images.dart';
 
 class CommentBottomSheet extends StatefulWidget {
   const  CommentBottomSheet({super.key});

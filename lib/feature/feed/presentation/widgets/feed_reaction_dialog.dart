@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/widget/custom_image.dart';
-import 'package:test_project/util/images.dart';
+import 'package:easy_course/common/widget/custom_image.dart';
+import 'package:easy_course/util/images.dart';
 
 class FeedReactionDialog extends StatelessWidget {
   const FeedReactionDialog({super.key});

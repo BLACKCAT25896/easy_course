@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/controller/theme_controller.dart';
+import 'package:easy_course/common/controller/theme_controller.dart';
 
 const sfProLight = TextStyle(
   fontFamily: 'Instrument Sans',

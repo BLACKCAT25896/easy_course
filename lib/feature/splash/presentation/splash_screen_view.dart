@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/common/controller/splash_controller.dart';
-import 'package:test_project/feature/authentication/logic/authentication_controller.dart';
-import 'package:test_project/helper/route_helper.dart';
-import 'package:test_project/util/app_constants.dart';
-import 'package:test_project/util/dimensions.dart';
-import 'package:test_project/util/images.dart';
+import 'package:easy_course/common/controller/splash_controller.dart';
+import 'package:easy_course/feature/authentication/logic/authentication_controller.dart';
+import 'package:easy_course/helper/route_helper.dart';
+import 'package:easy_course/util/app_constants.dart';
+import 'package:easy_course/util/dimensions.dart';
+import 'package:easy_course/util/images.dart';
 import 'package:get/get.dart';
-import 'package:test_project/util/styles.dart';
+import 'package:easy_course/util/styles.dart';
 
 class SplashScreenView extends StatefulWidget {
   const SplashScreenView({super.key});

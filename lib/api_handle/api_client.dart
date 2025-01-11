@@ -10,8 +10,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart';
-import 'package:test_project/api_handle/error_response.dart';
-import 'package:test_project/util/app_constants.dart';
+import 'package:easy_course/api_handle/error_response.dart';
+import 'package:easy_course/util/app_constants.dart';
 
 class ApiClient extends GetxService {
   final String appBaseUrl;

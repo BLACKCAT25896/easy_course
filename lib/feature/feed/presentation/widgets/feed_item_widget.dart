@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/widget/custom_contaner.dart';
-import 'package:test_project/common/widget/custom_image.dart';
-import 'package:test_project/feature/feed/domain/models/feed_model.dart';
-import 'package:test_project/feature/feed/presentation/widgets/comment_bottom_sheet.dart';
-import 'package:test_project/feature/feed/presentation/widgets/feed_reaction_dialog.dart';
-import 'package:test_project/helper/date_converter.dart';
-import 'package:test_project/util/dimensions.dart';
-import 'package:test_project/util/images.dart';
-import 'package:test_project/util/styles.dart';
+import 'package:easy_course/common/widget/custom_contaner.dart';
+import 'package:easy_course/common/widget/custom_image.dart';
+import 'package:easy_course/feature/feed/domain/models/feed_model.dart';
+import 'package:easy_course/feature/feed/presentation/widgets/comment_bottom_sheet.dart';
+import 'package:easy_course/feature/feed/presentation/widgets/feed_reaction_dialog.dart';
+import 'package:easy_course/helper/date_converter.dart';
+import 'package:easy_course/util/dimensions.dart';
+import 'package:easy_course/util/images.dart';
+import 'package:easy_course/util/styles.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
 class FeedItemRepository extends StatelessWidget {

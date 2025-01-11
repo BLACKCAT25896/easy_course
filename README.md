@@ -1,4 +1,4 @@
-# test_project
+# easy_course
 
 A new Flutter project.
 

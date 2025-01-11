@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:test_project/common/widget/custom_contaner.dart';
+import 'package:easy_course/common/widget/custom_contaner.dart';
 
 class CustomLoader extends StatelessWidget {
   const CustomLoader({super.key});

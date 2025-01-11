@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/controller/splash_controller.dart';
+import 'package:easy_course/common/controller/splash_controller.dart';
 
 class HomeScreen extends StatefulWidget {
 

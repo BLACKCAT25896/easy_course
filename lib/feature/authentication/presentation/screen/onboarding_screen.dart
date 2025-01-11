@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:test_project/common/widget/custom_button.dart';
-import 'package:test_project/common/widget/custom_snackbar.dart';
-import 'package:test_project/common/widget/custom_text_field.dart';
-import 'package:test_project/feature/authentication/logic/authentication_controller.dart';
-import 'package:test_project/helper/email_checker.dart';
+import 'package:easy_course/common/widget/custom_button.dart';
+import 'package:easy_course/common/widget/custom_snackbar.dart';
+import 'package:easy_course/common/widget/custom_text_field.dart';
+import 'package:easy_course/feature/authentication/logic/authentication_controller.dart';
+import 'package:easy_course/helper/email_checker.dart';
 import 'package:get/get.dart';
-import 'package:test_project/util/images.dart';
-import 'package:test_project/util/styles.dart';
+import 'package:easy_course/util/images.dart';
+import 'package:easy_course/util/styles.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});

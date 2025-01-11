@@ -2,12 +2,12 @@ import 'dart:developer';
 
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:test_project/api_handle/api_checker.dart';
-import 'package:test_project/common/widget/custom_snackbar.dart';
-import 'package:test_project/feature/feed/domain/models/feed_body.dart';
-import 'package:test_project/feature/feed/domain/models/feed_model.dart';
-import 'package:test_project/feature/feed/domain/repository/feed_repository.dart';
-import 'package:test_project/helper/image_size_checker.dart';
+import 'package:easy_course/api_handle/api_checker.dart';
+import 'package:easy_course/common/widget/custom_snackbar.dart';
+import 'package:easy_course/feature/feed/domain/models/feed_body.dart';
+import 'package:easy_course/feature/feed/domain/models/feed_model.dart';
+import 'package:easy_course/feature/feed/domain/repository/feed_repository.dart';
+import 'package:easy_course/helper/image_size_checker.dart';
 
 class FeedController extends GetxController implements GetxService{
   final FeedRepository feedRepository;

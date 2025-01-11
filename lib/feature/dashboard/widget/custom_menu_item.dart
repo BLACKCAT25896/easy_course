@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/controller/theme_controller.dart';
-import 'package:test_project/util/dimensions.dart';
-import 'package:test_project/util/styles.dart';
+import 'package:easy_course/common/controller/theme_controller.dart';
+import 'package:easy_course/util/dimensions.dart';
+import 'package:easy_course/util/styles.dart';
 
 class CustomMenuItem extends StatelessWidget {
   final bool isSelected;

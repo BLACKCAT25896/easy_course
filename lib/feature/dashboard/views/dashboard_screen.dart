@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/widget/animated_custom_dialog.dart';
-import 'package:test_project/common/widget/confirmation_dialog_widget.dart';
-import 'package:test_project/feature/dashboard/controller/dashboard_controller.dart';
-import 'package:test_project/feature/dashboard/model/navigation_model.dart';
-import 'package:test_project/feature/dashboard/widget/custom_menu_item.dart';
-import 'package:test_project/util/images.dart';
+import 'package:easy_course/common/widget/animated_custom_dialog.dart';
+import 'package:easy_course/common/widget/confirmation_dialog_widget.dart';
+import 'package:easy_course/feature/dashboard/controller/dashboard_controller.dart';
+import 'package:easy_course/feature/dashboard/model/navigation_model.dart';
+import 'package:easy_course/feature/dashboard/widget/custom_menu_item.dart';
+import 'package:easy_course/util/images.dart';
 
 
 

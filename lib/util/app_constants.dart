@@ -1,7 +1,7 @@
 import 'package:facebook_app_events/facebook_app_events.dart';
 import 'package:flutter/services.dart';
-import 'package:test_project/localization/language_model.dart';
-import 'package:test_project/util/images.dart';
+import 'package:easy_course/localization/language_model.dart';
+import 'package:easy_course/util/images.dart';
 
 
 class AppConstants {

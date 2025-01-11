@@ -1,14 +1,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/widget/custom_app_bar.dart';
-import 'package:test_project/common/widget/custom_search.dart';
-import 'package:test_project/feature/feed/controller/feed_controller.dart';
-import 'package:test_project/feature/feed/presentation/screens/create_new_feed_screen.dart';
-import 'package:test_project/feature/feed/presentation/widgets/feed_item_widget.dart';
-import 'package:test_project/util/dimensions.dart';
-import 'package:test_project/util/images.dart';
-import 'package:test_project/util/styles.dart';
+import 'package:easy_course/common/widget/custom_app_bar.dart';
+import 'package:easy_course/common/widget/custom_search.dart';
+import 'package:easy_course/feature/feed/controller/feed_controller.dart';
+import 'package:easy_course/feature/feed/presentation/screens/create_new_feed_screen.dart';
+import 'package:easy_course/feature/feed/presentation/widgets/feed_item_widget.dart';
+import 'package:easy_course/util/dimensions.dart';
+import 'package:easy_course/util/images.dart';
+import 'package:easy_course/util/styles.dart';
 
 class FeedScreen extends StatefulWidget {
   const FeedScreen({super.key});

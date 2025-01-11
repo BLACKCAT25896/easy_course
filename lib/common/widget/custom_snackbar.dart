@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:test_project/util/dimensions.dart';
+import 'package:easy_course/util/dimensions.dart';
 
 void showCustomSnackBar(String? message, {bool isError = true, double margin = Dimensions.paddingSizeSmall}) {
   if(message != null && message.isNotEmpty) {

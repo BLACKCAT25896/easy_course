@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart' as intl;
-import 'package:test_project/localization/language_model.dart';
-import 'package:test_project/util/app_constants.dart';
+import 'package:easy_course/localization/language_model.dart';
+import 'package:easy_course/util/app_constants.dart';
 
 class LocalizationController extends GetxController {
   final SharedPreferences sharedPreferences;

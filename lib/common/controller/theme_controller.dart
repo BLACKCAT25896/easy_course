@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:test_project/util/app_constants.dart';
+import 'package:easy_course/util/app_constants.dart';
 
 class ThemeController extends GetxController {
   final SharedPreferences sharedPreferences;

@@ -1,7 +1,7 @@
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:test_project/api_handle/api_client.dart';
-import 'package:test_project/util/app_constants.dart';
+import 'package:easy_course/api_handle/api_client.dart';
+import 'package:easy_course/util/app_constants.dart';
 
 class AuthenticationRepository{
   final ApiClient apiClient;

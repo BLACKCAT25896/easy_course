@@ -3,13 +3,13 @@ import 'package:app_links/app_links.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/controller/theme_controller.dart';
-import 'package:test_project/common/model/messages.dart';
-import 'package:test_project/helper/di_container.dart';
-import 'package:test_project/helper/route_helper.dart';
-import 'package:test_project/localization/localization_controller.dart';
-import 'package:test_project/theme/light_theme.dart';
-import 'package:test_project/util/app_constants.dart';
+import 'package:easy_course/common/controller/theme_controller.dart';
+import 'package:easy_course/common/model/messages.dart';
+import 'package:easy_course/helper/di_container.dart';
+import 'package:easy_course/helper/route_helper.dart';
+import 'package:easy_course/localization/localization_controller.dart';
+import 'package:easy_course/theme/light_theme.dart';
+import 'package:easy_course/util/app_constants.dart';
 import 'package:url_strategy/url_strategy.dart';
 
 

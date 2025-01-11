@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:test_project/feature/authentication/presentation/screen/onboarding_screen.dart';
-import 'package:test_project/feature/dashboard/views/dashboard_screen.dart';
-import 'package:test_project/feature/splash/presentation/splash_screen_view.dart';
+import 'package:easy_course/feature/authentication/presentation/screen/onboarding_screen.dart';
+import 'package:easy_course/feature/dashboard/views/dashboard_screen.dart';
+import 'package:easy_course/feature/splash/presentation/splash_screen_view.dart';
 
 
 

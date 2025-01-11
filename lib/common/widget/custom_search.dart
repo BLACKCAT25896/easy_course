@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/common/widget/custom_image.dart';
-import 'package:test_project/util/dimensions.dart';
-import 'package:test_project/util/images.dart';
-import 'package:test_project/util/styles.dart';
+import 'package:easy_course/common/widget/custom_image.dart';
+import 'package:easy_course/util/dimensions.dart';
+import 'package:easy_course/util/images.dart';
+import 'package:easy_course/util/styles.dart';
 
 
 class CustomSearch extends StatefulWidget {

@@ -1,6 +1,6 @@
 {
-    "name": "test_project",
-    "short_name": "test_project",
+    "name": "easy_course",
+    "short_name": "easy_course",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

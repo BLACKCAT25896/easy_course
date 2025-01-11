@@ -1,16 +1,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/common/widget/custom_app_bar.dart';
-import 'package:test_project/common/widget/custom_button.dart';
-import 'package:test_project/common/widget/custom_contaner.dart';
-import 'package:test_project/common/widget/custom_snackbar.dart';
-import 'package:test_project/common/widget/custom_text_field.dart';
-import 'package:test_project/feature/feed/controller/feed_controller.dart';
-import 'package:test_project/feature/feed/domain/models/feed_body.dart';
+import 'package:easy_course/common/widget/custom_app_bar.dart';
+import 'package:easy_course/common/widget/custom_button.dart';
+import 'package:easy_course/common/widget/custom_contaner.dart';
+import 'package:easy_course/common/widget/custom_snackbar.dart';
+import 'package:easy_course/common/widget/custom_text_field.dart';
+import 'package:easy_course/feature/feed/controller/feed_controller.dart';
+import 'package:easy_course/feature/feed/domain/models/feed_body.dart';
 
-import 'package:test_project/util/dimensions.dart';
-import 'package:test_project/util/styles.dart';
+import 'package:easy_course/util/dimensions.dart';
+import 'package:easy_course/util/styles.dart';
 
 class CreateNewFeedScreen extends StatefulWidget {
   const CreateNewFeedScreen({super.key});

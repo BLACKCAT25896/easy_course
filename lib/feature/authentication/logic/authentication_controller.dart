@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_project/api_handle/api_checker.dart';
-import 'package:test_project/common/widget/custom_snackbar.dart';
-import 'package:test_project/feature/authentication/domain/model/business_type_model.dart';
-import 'package:test_project/feature/authentication/domain/model/create_account_body.dart';
-import 'package:test_project/feature/authentication/domain/repository/authentication_repository.dart';
-import 'package:test_project/helper/route_helper.dart';
+import 'package:easy_course/api_handle/api_checker.dart';
+import 'package:easy_course/common/widget/custom_snackbar.dart';
+import 'package:easy_course/feature/authentication/domain/model/business_type_model.dart';
+import 'package:easy_course/feature/authentication/domain/model/create_account_body.dart';
+import 'package:easy_course/feature/authentication/domain/repository/authentication_repository.dart';
+import 'package:easy_course/helper/route_helper.dart';
 
 class AuthenticationController extends GetxController implements GetxService{
   final AuthenticationRepository authenticationRepository;
