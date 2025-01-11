@@ -1,4 +1,4 @@
-package com.codemoly.molystock
+package com.appify.easycourse
 
 import io.flutter.embedding.android.FlutterActivity
 

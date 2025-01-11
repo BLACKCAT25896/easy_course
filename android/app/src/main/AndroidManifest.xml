@@ -9,7 +9,7 @@
 
 
     <application
-        android:label="Bebshadar"
+        android:label="EasyCourse"
         android:name="${applicationName}"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"

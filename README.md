@@ -1,16 +1,15 @@
 # easy_course
-
-A new Flutter project.
-
 ## Getting Started
+Flutter version is 3.7
+### How to run This project
+open your IDE Like Android Studio or Vs Code
+run the following command
+flutter pub get
+flutter run 
+then select your desired device
 
-This project is a starting point for a Flutter application.
+### Here is the screenshots
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Here is apk
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
