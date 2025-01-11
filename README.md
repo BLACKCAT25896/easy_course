@@ -1,15 +1,16 @@
-# easy_course
+# Easy Course
+
 ## Getting Started
-Flutter version is 3.7
-### How to run This project
-open your IDE Like Android Studio or Vs Code
-run the following command
-flutter pub get
-flutter run 
-then select your desired device
+Welcome to **Easy Course**! This project is built using **Flutter version 3.7**. Follow the steps below to set up and run the project.
 
-### Here is the screenshots
+---
 
+### How to Run This Project
 
-### Here is apk
+1. **Open your IDE**  
+   Use your preferred IDE, such as **Android Studio** or **Visual Studio Code**.
 
+2. **Install Dependencies**  
+   Run the following command to fetch all the required dependencies:
+   ```bash
+   flutter pub get
