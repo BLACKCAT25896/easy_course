@@ -5,7 +5,7 @@ import 'package:test_project/common/widget/animated_custom_dialog.dart';
 import 'package:test_project/common/widget/confirmation_dialog_widget.dart';
 import 'package:test_project/feature/authentication/logic/authentication_controller.dart';
 import 'package:test_project/feature/dashboard/model/navigation_model.dart';
-import 'package:test_project/feature/home/presentation/screens/home_screen.dart';
+import 'package:test_project/feature/feed/presentation/screens/feed_screen.dart';
 import 'package:test_project/helper/route_helper.dart';
 import 'package:test_project/util/images.dart';
 
@@ -35,7 +35,7 @@ class DashboardController extends GetxController implements GetxService{
   final ScrollController scrollController = ScrollController();
 
   final List<NavigationModel> item = [
-    NavigationModel(name: 'community'.tr, activeIcon: Images.logo, inactiveIcon: Images.logo, screen: const HomeScreen()),
-    NavigationModel(name: 'logout'.tr, activeIcon: Images.logo, inactiveIcon: Images.logo, screen: const SizedBox()),
+    NavigationModel(name: 'Community', activeIcon: Images.community, inactiveIcon: Images.logo, screen: const FeedScreen()),
+    NavigationModel(name: 'Logout', activeIcon: Images.logout, inactiveIcon: Images.logo, screen: const SizedBox()),
   ];
 }

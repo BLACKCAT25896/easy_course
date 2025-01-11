@@ -40,7 +40,7 @@ class DashboardScreenState extends State<DashboardScreen> {
         return Scaffold(
           resizeToAvoidBottomInset: false,
           body: PageStorage(bucket: bucket, child: menuController.item[menuController.currentTab].screen),
-          bottomNavigationBar: Container(decoration: BoxDecoration(
+          bottomNavigationBar: Container(height: 70,decoration: BoxDecoration(
               color: Theme.of(context).cardColor,
               boxShadow: [BoxShadow(offset: const Offset(1,1), blurRadius: 2, spreadRadius: 1, color: Theme.of(context).hintColor)]),
             child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,

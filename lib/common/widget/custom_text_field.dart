@@ -50,6 +50,7 @@ class CustomTextField extends StatefulWidget {
   final bool isRequired;
   final bool optional;
   final String? initialValue;
+  final Color? inputTextColor;
 
 
   const CustomTextField({
@@ -95,7 +96,7 @@ class CustomTextField extends StatefulWidget {
     this.minLines = 1,
     this.onPressedPrefix,
     this.optional = false,
-    this.initialValue,
+    this.initialValue, this.inputTextColor,
 
   });
 
@@ -136,7 +137,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           autovalidateMode: AutovalidateMode.onUserInteraction,
           onTap: widget.onTap,
           readOnly:widget.readOnly,
-          style: widget.textStyle?? Get.textTheme.titleMedium!.copyWith(fontSize: Dimensions.fontSizeLarge, color: Colors.white, fontWeight: FontWeight.w400),
+          style: widget.textStyle?? Get.textTheme.titleMedium!.copyWith(fontSize: Dimensions.fontSizeLarge, color: widget.inputTextColor??Colors.white, fontWeight: FontWeight.w400),
           textInputAction: widget.inputAction,
           maxLength: widget.maxLength,
           keyboardType: (widget.isAmount || widget.inputType == TextInputType.phone)

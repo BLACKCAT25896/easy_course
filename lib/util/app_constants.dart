@@ -10,7 +10,7 @@ class AppConstants {
   static const String whatsUpdate = "Fixing Price related problems for sales and purchase";
   static const String appName = 'AppifyLab';
 
-  static const String baseUrl = 'https://ezycourse.com';
+  static const String baseUrl = 'https://iap.ezycourse.com';
   static const String loginUri = '/api/app/student/auth/login';
   static const String feedList = '/api/app/teacher/community/getFeed?status=feed';
   static const String uploadFeed = '/api/app/teacher/community/createFeedWithUpload';

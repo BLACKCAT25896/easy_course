@@ -23,9 +23,7 @@ class CustomMenuItem extends StatelessWidget {
     return InkWell(highlightColor: Colors.transparent, hoverColor: Colors.transparent, onTap: onTap,
       child: SizedBox(width: isSelected ? 90 : 50, child: Column(mainAxisSize: MainAxisSize.min, children: [
 
-           if(isSelected)
-          Container(width: 50, height: 3, decoration: BoxDecoration(color: Theme.of(context).primaryColor,
-              borderRadius: const BorderRadius.vertical(bottom: Radius.circular(120)))),
+
 
          Padding(padding: const EdgeInsets.all(8.0),
            child: Column(children: [

@@ -13,7 +13,7 @@ class CustomAppBar extends StatelessWidget  implements PreferredSizeWidget {
   final List<Widget>? actions;
   final Function()? onBackPress;
   const CustomAppBar({
-    super.key, this.title, this.titleWidget, this.toolbarHeight = 63, this.showBakButton = true,
+    super.key, this.title, this.titleWidget, this.toolbarHeight = 70, this.showBakButton = true,
     this.onBackPress, this.actions, this.centerTitle = true, this.backIcon});
 
   @override
@@ -21,7 +21,7 @@ class CustomAppBar extends StatelessWidget  implements PreferredSizeWidget {
     bool isRouteTreeEmpty = Navigator.of(context).canPop();
     return Container(decoration: BoxDecoration(color: Theme.of(context).primaryColor),
 
-        child: AppBar(title: titleWidget?? Text(title??"",style: textMedium.copyWith(
+        child: AppBar(title: titleWidget?? Text( title??"",style: textMedium.copyWith(
             fontSize: Dimensions.fontSizeExtraLarge, color: Colors.white),) ,
           surfaceTintColor: Theme.of(context).cardColor,
 
