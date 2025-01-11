@@ -21,7 +21,7 @@ class DashboardController extends GetxController implements GetxService{
     if(index == 1){
       showAnimatedDialog(Get.context!,  ConfirmationDialogWidget(icon: Images.logo,
         title: 'exit_app'.tr,
-        description: 'do_you_want_to_exit_the_app'.tr, onYesPressed: (){
+        description: 'Are you sure, you want to log out?', onYesPressed: (){
         Get.find<AuthenticationController>().clearSharedData();
          Get.offAllNamed(RouteHelper.getOnboardingRoute());
         },),isFlip: true);

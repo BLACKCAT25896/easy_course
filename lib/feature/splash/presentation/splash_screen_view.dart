@@ -58,11 +58,6 @@ class _SplashScreenViewState extends State<SplashScreenView>  with SingleTickerP
               Center(child: Padding(padding: const EdgeInsets.all(50.0),
                 child: ScaleTransition(scale: _animation,
                     child: Center(child: Hero(tag: "logo", child: Image.asset(Images.logo)))))),
-
-            Align(alignment: Alignment.bottomCenter,
-              child: Padding(padding: const EdgeInsets.only(bottom: 50.0),
-                child: Text("${AppConstants.appName} ${"version".tr} : ${AppConstants.version}",
-                  style: textRegular.copyWith(color: Colors.white, fontSize: Dimensions.fontSizeSmall)))),
             ],
           );
         }

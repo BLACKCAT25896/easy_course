@@ -17,22 +17,25 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-  @override
-  void initState() {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
-    super.initState();
-  }
 
-  @override
-  void dispose() {
-    SystemChrome.setEnabledSystemUIMode(
-        SystemUiMode.manual, overlays: [SystemUiOverlay.top, SystemUiOverlay.bottom]);
-    super.dispose();
-  }
+
+
+
 
 
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
+  @override
+  void initState() {
+    emailController.text = Get.find<AuthenticationController>().getEmail();
+    passwordController.text = Get.find<AuthenticationController>().getPassword();
+    if(Get.find<AuthenticationController>().getEmail().isNotEmpty){
+      Get.find<AuthenticationController>().toggleRememberMe(remember: true, notify: false);
+    }
+    super.initState();
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -109,7 +112,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
                           Expanded(child: Transform.translate(
                               offset: const Offset(-14, 0),
-                              child: Text("remember_me".tr,style: textMedium.copyWith(color: Colors.white)))),
+                              child: Text("Remember me",style: textMedium.copyWith(color: Colors.white)))),
 
                         ]),
                       ),

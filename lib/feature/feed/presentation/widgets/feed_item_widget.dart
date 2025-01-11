@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:test_project/common/widget/custom_contaner.dart';
 import 'package:test_project/common/widget/custom_image.dart';
 import 'package:test_project/feature/feed/domain/models/feed_model.dart';
+import 'package:test_project/feature/feed/presentation/widgets/comment_bottom_sheet.dart';
 import 'package:test_project/feature/feed/presentation/widgets/feed_reaction_dialog.dart';
 import 'package:test_project/helper/date_converter.dart';
 import 'package:test_project/util/dimensions.dart';
@@ -41,7 +42,11 @@ class FeedItemRepository extends StatelessWidget {
           ),
         const Divider(thickness: .125, ),
 
-        Text("${feedModel?.feedTxt}",maxLines: 4,overflow: TextOverflow.ellipsis, style: textMedium.copyWith(fontSize: Dimensions.fontSizeLarge),),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8.0),
+          child: Text("${feedModel?.feedTxt}",maxLines: 4,overflow: TextOverflow.ellipsis,
+            style: textRegular.copyWith(),),
+        ),
         ClipRRect(borderRadius: BorderRadius.circular(5),
             child: CustomImage(width: Get.width, height: Get.width/2.4, image: feedModel?.pic)),
 
@@ -56,12 +61,12 @@ class FeedItemRepository extends StatelessWidget {
                 InkWell(onTap: (){},child: const CustomImage(image: Images.like, width: 20, height: 20, localAsset: true,)),
               ],),
             ),
-             Expanded(child: Text("You and 2 others", style: textRegular.copyWith(),)),
+             Expanded(child: Text("You and ${feedModel?.likeCount} others", style: textRegular.copyWith(),)),
               const SizedBox(width: 10),
 
              const CustomImage(image: Images.commentOutline, width: 20, height: 20, localAsset: true,),
              const SizedBox(width: 5),
-             const Text("12 Comments", style: textRegular,)
+              Text("${feedModel?.commentCount} Comments", style: textRegular,)
            ],),
          ),
 
@@ -69,15 +74,19 @@ class FeedItemRepository extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Row(children: [
 
-            InkWell(onTap: ()=> Get.dialog(FeedReactionDialog()),
+            InkWell(onTap: ()=> Get.dialog(const FeedReactionDialog()),
                 child: const CustomImage(image: Images.thumb, width: 20, height: 20, localAsset: true,)),
             const SizedBox(width: 5),
-            Expanded(child: Text("You and 2 others", style: textRegular.copyWith(),)),
+            Expanded(child: Text("Like", style: textRegular.copyWith(),)),
             const SizedBox(width: 10),
 
-            const CustomImage(image: Images.commentFill, width: 20, height: 20, localAsset: true,),
-            const SizedBox(width: 5),
-            const Text("Comment", style: textRegular,)
+           InkWell(onTap: ()=> showModalBottomSheet(isScrollControlled: true, context: context, builder: (_)=> CommentBottomSheet(), ),
+             child: Row(children: [
+               const CustomImage(image: Images.commentFill, width: 20, height: 20, localAsset: true,),
+               const SizedBox(width: 5),
+               const Text("Comment", style: textRegular,)
+             ]),
+           )
           ],),
         ),
 

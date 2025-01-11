@@ -15,22 +15,37 @@ class FeedReactionDialog extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(children: [
-            CustomImage(image: Images.likeImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,),
+            InkWell(onTap: ()=> Get.back(),
+                child: CustomImage(image: Images.likeImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,)),
              SizedBox(width: spacing,),
-            CustomImage(image: Images.loveImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,),
+
+            InkWell(onTap: ()=> Get.back(),
+                child: CustomImage(image: Images.loveImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,)),
              SizedBox(width: spacing,),
-            CustomImage(image: Images.thinkingImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,),
+
+            InkWell(onTap: ()=> Get.back(),
+                child: CustomImage(image: Images.thinkingImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,)),
              SizedBox(width: spacing,),
-            CustomImage(image: Images.loughImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,),
+
+            InkWell(onTap: ()=> Get.back(),
+                child: CustomImage(image: Images.loughImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,)),
              SizedBox(width: spacing,),
-            CustomImage(image: Images.wowImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,),
+
+            InkWell(onTap: ()=> Get.back(),
+                child: CustomImage(image: Images.wowImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,)),
              SizedBox(width: spacing,),
-            CustomImage(image: Images.sadImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,),
+
+
+            InkWell(onTap: ()=> Get.back(),
+                child: CustomImage(image: Images.sadImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,)),
              SizedBox(width: spacing,),
-            CustomImage(image: Images.angryImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,),
+
+            InkWell(onTap: ()=> Get.back(),
+                child: CustomImage(image: Images.angryImo,width: Get.width/ ration, height: Get.width/ ration, localAsset: true,)),
              SizedBox(width: spacing,),
 
               ]),
         ));
   }
 }
+

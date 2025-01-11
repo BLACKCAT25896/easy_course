@@ -7,6 +7,7 @@ import 'package:test_project/common/widget/custom_contaner.dart';
 import 'package:test_project/common/widget/custom_snackbar.dart';
 import 'package:test_project/common/widget/custom_text_field.dart';
 import 'package:test_project/feature/feed/controller/feed_controller.dart';
+import 'package:test_project/feature/feed/domain/models/feed_body.dart';
 
 import 'package:test_project/util/dimensions.dart';
 import 'package:test_project/util/styles.dart';
@@ -33,7 +34,29 @@ class _CreateNewFeedScreenState extends State<CreateNewFeedScreen> {
         InkWell(onTap: ()=> Get.back(),
             child: Text("Close", style: textRegular.copyWith(color:Theme.of(context).hintColor),)),
         Text("Create Post", style: textRegular.copyWith(color :Colors.white),),
-        Text("Create", style: textRegular.copyWith(color :const Color(0xFF6561FE)),),
+        GetBuilder<FeedController>(
+          builder: (feedController) {
+            return TextButton(onPressed: () {
+              String feedText = nameController.text.trim();
+              if(feedText.isEmpty){
+                showCustomSnackBar("write something");
+              }else{
+                FeedBody body = FeedBody(
+                  feedTxt: feedText,
+                  communityId: 2914,
+                  spaceId: 5883,
+                  uploadType: "text",
+                  activityType: "group",
+                  isBackground: 0
+                );
+
+                feedController.createNewFeed(body);
+
+              }
+            },
+            child: Text("Create", style: textRegular.copyWith(color :const Color(0xFF6561FE)),));
+          }
+        ),
       ],) ),
       body: CustomScrollView(slivers: [
         SliverToBoxAdapter(child: Padding(
@@ -50,7 +73,9 @@ class _CreateNewFeedScreenState extends State<CreateNewFeedScreen> {
                     minLines: 7,maxLines: 20,
                     inputTextColor: Colors.black,
                     inputType: TextInputType.multiline,
-                    hintText: "enter_category_name".tr),
+                    hintText: "What's on your mind?"),
+
+                  
 
 
                 ],);

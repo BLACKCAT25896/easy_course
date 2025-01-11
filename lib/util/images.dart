@@ -16,6 +16,8 @@ class Images {
   static const String wowImo = 'assets/image/wow_imo.png';
   static const String sadImo = 'assets/image/sad_imo.png';
   static const String angryImo = 'assets/image/angry_imo.png';
+  static const String commentSend = 'assets/image/comment_send.png';
+  static const String arrow = 'assets/image/arrow.png';
   static const String saudi = 'assets/image/saudi.png';
   static const String unitedKingdom = 'assets/image/united_kingdom.png';
   static const String bangladesh = 'assets/image/bangladesh.png';

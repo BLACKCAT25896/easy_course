@@ -18,35 +18,38 @@ class ConfirmationDialogWidget extends StatelessWidget {
     return Dialog(
       elevation: 0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(Dimensions.radiusSmall)),
-      child: Padding(
-        padding:  const EdgeInsets.all(Dimensions.paddingSizeLarge),
-        child: Column(mainAxisSize: MainAxisSize.min, children: [
+      child: Column(mainAxisSize: MainAxisSize.min, children: [
 
 
+        const SizedBox(height: Dimensions.paddingSizeSmall),
+        Padding(padding:  const EdgeInsets.all(Dimensions.paddingSizeSmall),
+            child: Text("Logout", style: textSemiBold.copyWith(fontSize: 26), textAlign: TextAlign.center)),
 
-          Padding(padding:  const EdgeInsets.all(Dimensions.paddingSizeSmall),
-            child: Text(description, style: textMedium.copyWith(fontSize: Dimensions.fontSizeDefault), textAlign: TextAlign.center)),
-           const SizedBox(height: Dimensions.paddingSizeSmall),
 
-          Row(children: [
-            hasCancel ? Expanded(child: CustomButton(height: 28,
-              borderRadius: 123,
-              buttonColor: Colors.transparent,
-              showBorderOnly: true,
-              borderColor: Theme.of(context).colorScheme.error,
-              onTap: () => isLogOut ? onYesPressed() : Get.back(),
-              text: isLogOut ? 'yes'.tr : 'no'.tr,
-            )) :  const SizedBox(),
-            SizedBox(width: hasCancel ? Dimensions.paddingSizeLarge : 0),
+        Padding(padding:  const EdgeInsets.all(Dimensions.paddingSizeSmall),
+          child: Text(description, style: textRegular.copyWith(fontSize: 20), textAlign: TextAlign.center)),
+         const SizedBox(height: Dimensions.paddingSizeSmall),
+        Container(width: Get.width, height: 1,color: Theme.of(context).hintColor),
 
-            Expanded(child: CustomButton(borderRadius: 123, height: 34,
-              text: isLogOut ? 'no'.tr : hasCancel ? 'yes'.tr : 'ok'.tr,
-              onTap: () => isLogOut ? Get.back() : onYesPressed(),
-            )),
-          ])
+        Row(children: [
+           Expanded(child: CustomButton(
 
-        ]),
-      ),
+            buttonColor: Colors.transparent,
+            showBorderOnly: true,
+
+            onTap: () =>  onYesPressed(),
+            text:  'Yes' , textColor: Color(0xFF5C5AE8),
+          )),
+         Container(width: 1, height: 50,color: Theme.of(context).hintColor),
+
+          Expanded(child: CustomButton(
+            buttonColor: Colors.transparent,
+            text:  'No',
+            onTap: () =>  Get.back(),
+          )),
+        ])
+
+      ]),
     );
   }
 }

@@ -51,6 +51,7 @@ class FeedController extends GetxController implements GetxService{
     isLoading = true;
     Response? response = await feedRepository.createNewFeed(body);
     if (response?.statusCode == 200) {
+      Get.back();
       showCustomSnackBar("Feed created successfully", isError: false);
      getFeedList();
       isLoading = false;
